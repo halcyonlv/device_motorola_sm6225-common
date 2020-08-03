@@ -274,6 +274,10 @@ on boot
    chown camera vendor_tcmd /mnt/vendor/persist/camera/focus/offset_cal
    chmod 0660 /mnt/vendor/persist/camera/focus/offset_cal
 
+   # report max frequency to unity tasks.
+   write /proc/sys/kernel/sched_lib_name "libunity.so"
+   write /proc/sys/kernel/sched_lib_mask_force 255
+
    # change ownership of capsensor related sysfs node
    chown system system /sys/class/capsense/reset
    chown system system /sys/class/capsense/int_state
