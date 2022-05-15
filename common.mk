@@ -266,6 +266,7 @@ PRODUCT_PACKAGES += \
     SystemUIResCommon \
     TelephonyResCommon \
     TelephonyResProduct \
+    SimpleDeviceResConfig \
     WifiResCommon \
     WifiResTarget
 
