@@ -270,6 +270,7 @@ PRODUCT_PACKAGES += \
     FrameworksResProduct \
     FrameworksResTarget \
     NcmTetheringOverlay \
+    NestLauncherCommon \
     SettingsProviderResCommon \
     SystemUIResCommon \
     TelephonyResCommon \
