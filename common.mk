@@ -23,16 +23,22 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+ifeq ($(WITH_GMS),true)
+SYSTEM_FS_TYPE := erofs
+else
+SYSTEM_FS_TYPE := ext4
+endif
+
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-    FILESYSTEM_TYPE_system=erofs \
+    FILESYSTEM_TYPE_system=$(SYSTEM_FS_TYPE) \
     POSTINSTALL_OPTIONAL_system=true
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_vendor=true \
     POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
-    FILESYSTEM_TYPE_vendor=erofs \
+    FILESYSTEM_TYPE_vendor=$(SYSTEM_FS_TYPE) \
     POSTINSTALL_OPTIONAL_vendor=true
 
 PRODUCT_PACKAGES += \
