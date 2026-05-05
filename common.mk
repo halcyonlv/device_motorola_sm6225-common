@@ -270,6 +270,7 @@ PRODUCT_PACKAGES += \
     FrameworksResCommon \
     FrameworksResProduct \
     FrameworksResTarget \
+    LineageApertureAppCommon \
     NcmTetheringOverlay \
     NestLauncherCommon \
     SettingsProviderResCommon \
