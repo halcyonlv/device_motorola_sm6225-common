@@ -1,3 +1,6 @@
+# Blur
+ro.surface_flinger.blur_scale=0.015
+
 # CNE
 persist.vendor.cne.feature=1
 persist.vendor.cne.logging.qxdm=3974
