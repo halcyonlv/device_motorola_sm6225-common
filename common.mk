@@ -156,7 +156,10 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FM2
+    FMTuner
+
+PRODUCT_PACKAGES += \
+    libqcomfmjni
 
 # GPS
 PRODUCT_PACKAGES += \
