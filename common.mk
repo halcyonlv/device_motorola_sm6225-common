@@ -150,6 +150,10 @@ PRODUCT_PACKAGES += \
     init.qti.display_boot.rc \
     init.qti.display_boot.sh
 
+# Dolby
+PRODUCT_PACKAGES += \
+    HalcyonDolby
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
